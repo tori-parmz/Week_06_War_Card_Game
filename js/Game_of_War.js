@@ -56,10 +56,20 @@ class Deck {
     }
     */
 
+    dealDeck() {
+        player1.hand = this.deck.slice(0, 26);
+        console.log(player1.hand);
+        player2.hand = this.deck.slice(26, 52);
+        console.log(player2.hand);
+    }
+
 }
 
 let gameDeck = new Deck();
 gameDeck.createDeck();
+gameDeck.dealDeck();
 //gameDeck.shuffleDeck();
 //Methods in this class to create the deck, shuffle, and deal
 
+console.log(player1);
+console.log(player2);
