@@ -1,0 +1,15 @@
+{
+  "name": "week_06_war_card_game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Game_of_War.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
