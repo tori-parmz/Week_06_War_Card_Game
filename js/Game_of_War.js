@@ -74,6 +74,7 @@ class Deck {
 
 }
 
+//Creating a new instance of the deck to get shuffled and dealt to each player
 let gameDeck = new Deck();
 gameDeck.createDeck();
 gameDeck.dealDeck();
@@ -136,7 +137,7 @@ class GamePlay {
         }
     }
 }
-
+//creating a new instance of the game in order to start the game
 let startGame = new GamePlay();
 
 startGame.compareCards();
