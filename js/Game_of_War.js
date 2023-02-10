@@ -50,9 +50,9 @@ class Deck {
         }
         console.log(this.deck);
     }
-   /*
+
     shuffleDeck() {
-        for (let i = this.deck.length - 1; i >= 0; i++) {
+        for (let i = this.deck.length - 1; i > 0; i--) {
             let j = Math.floor(Math.random() * (i + 1));
             let temp = this.deck [i];
             this.deck[i] = this.deck [j];
@@ -62,7 +62,7 @@ class Deck {
     
 
     }
-    */
+    
   
 
     dealDeck() {
@@ -77,8 +77,9 @@ class Deck {
 //Creating a new instance of the deck to get shuffled and dealt to each player
 let gameDeck = new Deck();
 gameDeck.createDeck();
+gameDeck.shuffleDeck();
 gameDeck.dealDeck();
-//gameDeck.shuffleDeck();
+
 //Methods in this class to create the deck, shuffle, and deal
 
 

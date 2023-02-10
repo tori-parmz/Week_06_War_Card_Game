@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of War</title>
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css" />
+   <!---<script src="../js/Game_of_War.js"></script>-->
+    <!--<script src="tests/wartests.js"></script>-->
+</head>
+<body>
+    <div id="mocha"></div>
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script src="node_modules/chai/chai.js"></script>
+    <script>
+        mocha.setup('bdd')
+    </script>
+
+    <!--Code that we to want test-->
+    <script src="../js/Game_of_War.js"></script>
+
+
+    <!--Tests that we are using-->
+    <script src="wartests.js"></script>
+
+    <script>
+        mocha.run()
+    </script>
+</body>
+</html>
