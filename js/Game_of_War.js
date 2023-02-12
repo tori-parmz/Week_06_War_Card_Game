@@ -13,12 +13,6 @@ class Player {
 let player1 = new Player (prompt(`Enter a name for Player One:`));
 let player2 = new Player (prompt(`Enter a name for Player Two:`));
 
-/*
-let player1 = new Player('Josie');
-let player2 = new Player('Greg');
-console.log(player1);
-console.log(player2);
-*/
 
 //Class for card - create 52 card objects
 
