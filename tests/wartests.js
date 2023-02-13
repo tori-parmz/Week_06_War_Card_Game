@@ -21,7 +21,8 @@ describe("dealHands", function(){
         
         const testGame = new GamePlay();
         
-
+        //needs to startGame to create the deck & split the deck
+        //dealHands to deal to each of the players
         testGame.startGame();
         testGame.dealHands();
         
@@ -30,7 +31,7 @@ describe("dealHands", function(){
         done();
 
          
-    
+        //console logging the new deck, the values for each of the hands, and the full arrays for each hand
         console.log(testGame.gameDeck);
 
         console.log('Test Player One Hand:', testGame.player1.hand.length);

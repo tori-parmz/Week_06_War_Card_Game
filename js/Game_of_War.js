@@ -49,7 +49,7 @@ class Deck {
         }
         //console.log(this.deck);
     }
-
+//shuffle method 
     shuffleDeck() {
         for (let i = this.deck.length - 1; i > 0; i--) {
             let j = Math.floor(Math.random() * (i + 1));
@@ -61,7 +61,7 @@ class Deck {
     
 
     }
-
+    //split the deck in half to be stored in the player deck arrays
     splitDeck() {
         this.playerDeck1 = this.deck.slice(0, 26);
         this.playerDeck2 = this.deck.slice(26, 52);
@@ -81,14 +81,14 @@ class Deck {
 class GamePlay {
     constructor() {
     
-    //two empty variables that will take the new player objects when created
+    //two empty variables that will take the new Player instances when created
     this.player1 = null;
     this.player2 = null;
     }
     
    
 
-
+    //startGame method creates two new players, creates the deck, shuffles the deck, and splits the deck
     startGame() {
     this.player1 = new Player (prompt(`Enter a name for Player One:`));
     this.player2 = new Player (prompt(`Enter a name for Player Two:`));
@@ -100,6 +100,8 @@ class GamePlay {
 
 
     }
+
+    //dealHands method will pus each index of each arrays from the split deck into the players' hands
     dealHands() {
         for (let i = 0; i < 26; i++) {
             this.player1.hand.push(this.gameDeck.playerDeck1[i]);
