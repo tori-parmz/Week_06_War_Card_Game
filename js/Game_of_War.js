@@ -31,7 +31,7 @@ class Deck {
         this.deck = [];
         this.faceValues = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King', 'Ace']
         this.suits = ['hearts', 'diamonds', 'clubs', 'spades']
-        this.ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+        this.ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,]
         this.playerDeck1 = [];
         this.playerDeck2 = [];
 
